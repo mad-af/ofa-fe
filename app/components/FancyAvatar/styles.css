@@ -1,0 +1,60 @@
+.avatar {
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.shape {
+  height: calc(10vw + 13vh);
+  width: calc(10vw + 13vh);
+  /* min-width: 100px;
+  min-height: 100px; */
+  /* background-color: var(--color-2); */
+  border: 1.4vmin solid #fefefe53;
+  /* background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%); */
+  background-image: url(https://pps.whatsapp.net/v/t61.24694-24/310927847_477807220944835_8617502243373020390_n.jpg?ccb=11-4&oh=01_AdR9eDMhCjdUKk5iob8hSQY8cGeC9nAT8j_bGehwSUUZag&oe=63B03A4F);
+  background-size: contain;
+  background-position: 65% 68%;
+  animation: morph 6s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transition: all 1s ease-in-out;
+}
+
+.decoration {
+  height: calc(10.5vw + 13vh);
+  width: calc(10.5vw + 13vh);
+  background-color: var(--color-4);
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  animation: morph 4s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+			border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+	} 
+	
+	50% {
+			border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+  
+	100% {
+		border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+	} 
+}
+
+
+/* Media Queries */
+
+  /* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 720px) {
+  /* MOBILE NAVIGATION */
+  /* .avatar {
+    padding: 1rem;
+  } */
+  /* .shape {
+    height: 15vw;
+    width: 15vw;
+  } */
+}
